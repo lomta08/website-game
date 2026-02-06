@@ -65,7 +65,7 @@ function startTimer() {
   }, 1000);
 }
 
-function endGame(msg: string) {
+function endGame(_msg: string) {
   clearInterval(gameInterval);
   gameScreen.style.display = 'none';
   resultsScreen.style.display = 'block';
