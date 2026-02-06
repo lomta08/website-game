@@ -1,0 +1,37 @@
+<div id="app">
+  <div id="menu-screen">
+  <h1>Photo Quiz</h1>
+  <select id="category-select">
+  <option value="All">All Categories</option>
+  <option value="Animals">Animals</option>
+  <option value="Actors">Actors</option>
+  <option value="Movies">Movies</option>
+</select>
+  <button id="solo-btn">Solo (Leaderboard)</button>
+  <button id="online-btn" disabled>Online (Coming Soon)</button>
+  <button id="room-btn" disabled>Create Room (Coming Soon)</button>
+</div>
+
+  <div id="game-screen" style="display: none;">
+    <div class="stats">
+      <p id="timer-display">Time: 60s</p>
+      <p id="score-display">Score: 0</p>
+    </div>
+    <div id="image-container">
+      <img id="quiz-image" src="" alt="Quiz" style="max-width: 100%; height: auto;">
+    </div>
+    <input type="text" id="answer-input" placeholder="What is this?" autocomplete="off">
+    <div class="controls">
+      <button id="skip-btn">Skip (-10s)</button>
+    </div>
+  </div>
+
+  <div id="results-screen" style="display: none;">
+    <h1>Game Over!</h1>
+    <p>Your Final Score: <span id="final-score">0</span></p>
+    <button id="restart-btn">Play Again</button>
+  </div>
+
+</div>
+
+<script type="module" src="/src/main.ts"></script>
